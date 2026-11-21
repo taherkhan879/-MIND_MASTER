@@ -93,3 +93,166 @@
     transform: translateX(5px);
   }
 }
+/* Difficulty selection */
+
+.level-selection {
+  margin: 25px 0;
+}
+
+.level-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  padding: 10px 20px;
+  border: 2px solid #00d4ff;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.level-btn:hover,
+.active-level {
+  background: #00d4ff;
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* Grid adjustment */
+
+.number-grid {
+  display: grid;
+  gap: 10px;
+  max-width: 450px;
+  margin: 25px auto;
+}
+
+/* Responsive grid */
+
+.number-box {
+  min-width: 0;
+  aspect-ratio: 1;
+  font-size: clamp(14px, 4vw, 22px);
+}
+/* =========================
+   PERSONAL RECORDS
+========================= */
+
+.records-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.records-container > h2 {
+  margin-bottom: 20px;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.record-card {
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid #00d4ff;
+  transition: 0.3s;
+}
+
+.record-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.2);
+}
+
+.record-card h3 {
+  font-size: 14px;
+}
+
+.record-card h2 {
+  color: #00d4ff;
+  margin-top: 10px;
+}
+
+/* =========================
+   DIFFICULTY BUTTONS
+========================= */
+
+.level-selection {
+  margin: 25px 0;
+}
+
+.level-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  padding: 10px 20px;
+  border: 2px solid #00d4ff;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.level-btn:hover,
+.active-level {
+  background: #00d4ff;
+  color: #111;
+  transform: scale(1.05);
+}
+
+/* =========================
+   NUMBER GRID
+========================= */
+
+.number-grid {
+  display: grid;
+  gap: 10px;
+  max-width: 450px;
+  margin: 25px auto;
+}
+
+.number-box {
+  min-width: 0;
+  aspect-ratio: 1;
+  font-size: clamp(14px, 4vw, 22px);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 450px) {
+
+  .records-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .record-card {
+    padding: 12px;
+  }
+
+  .level-btn {
+    padding: 8px 12px;
+  }
+
+  .number-grid {
+    gap: 6px;
+    margin: 20px auto;
+  }
+
+}
